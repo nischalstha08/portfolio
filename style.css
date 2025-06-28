@@ -1827,6 +1827,12 @@ h1, h2, h3 {
     flex: 1 1 calc(33% - 1.5rem);  /* three across, minus gap */
     box-sizing: border-box;
     max-width: calc(33% - 1.5rem);
+    display: flex;             /* stack children vertically */
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
   
   /* Adjust for smaller screens */
@@ -1841,5 +1847,31 @@ h1, h2, h3 {
       flex: 1 1 100%;
       max-width: 100%;
     }
+  }
+
+  /* Image and content layout within certificate cards */
+  .cert-image {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cert-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .cert-content {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cert-content a.btn {
+    margin-top: auto;
   }
   
