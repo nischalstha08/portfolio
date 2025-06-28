@@ -1874,4 +1874,17 @@ h1, h2, h3 {
   .cert-content a.btn {
     margin-top: auto;
   }
+
+  /* Set readable text colors for certification cards */
+  .cert-card h3 {
+    color: #333;
+  }
+
+  .cert-card h4 {
+    color: #666;
+  }
+
+  .cert-card p {
+    color: #444;
+  }
   
