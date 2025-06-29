@@ -28,12 +28,12 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     overflow-x: hidden;
-    background-color: rgba(248, 249, 250, 0.8); /* Increased opacity here */
+    background-color: var(--background-color);
     background: linear-gradient(-45deg,
-        rgba(97, 137, 47, 0.8),
-        rgba(134, 194, 50, 0.8),
-        rgba(71, 75, 79, 0.8),
-        rgba(107, 110, 112, 0.8)
+        #222629,
+        #474B4F,
+        #61892F,
+        #86C232
     );
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
