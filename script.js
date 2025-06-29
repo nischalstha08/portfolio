@@ -2,6 +2,8 @@
 const loadingScreen = document.getElementById('loading-screen');
 const loadingText = document.getElementById('loading-text');
 const matrixEffect = document.getElementById('matrix-effect');
+const rootStyles = getComputedStyle(document.documentElement);
+const primaryColor = rootStyles.getPropertyValue('--primary-color').trim();
 const languages = [
     'NISCHAL SHRESTHA',           // English
     'निश्छल श्रेष्ठ',            // Nepali/Hindi (Devanagari)
@@ -46,7 +48,7 @@ function createMatrixEffect() {
     function draw() {
         ctx.fillStyle = 'rgba(255, 255, 255, 0.05)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = '#86C232';
+        ctx.fillStyle = primaryColor;
         ctx.font = fontSize + 'px monospace';
 
         for (let i = 0; i < drops.length; i++) {
@@ -282,13 +284,13 @@ window.onload = function() {
 
   // Particles.js configuration
   particlesJS('particles-js', {
-    particles: {
-      number: { value: 80, density: { enable: true, value_area: 800 } },
-      color: { value: "#86C232" },
-      shape: { type: "circle" },
-      opacity: { value: 0.5, random: false },
-      size: { value: 3, random: true },
-      line_linked: { enable: true, distance: 150, color: "#86C232", opacity: 0.4, width: 1 },
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: primaryColor },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: false },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: primaryColor, opacity: 0.4, width: 1 },
       move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
     },
     interactivity: {
@@ -359,11 +361,11 @@ document.addEventListener('DOMContentLoaded', function() {
     particlesJS('home-particles', {
         particles: {
             number: { value: 80, density: { enable: true, value_area: 800 } },
-            color: { value: "#61892F" },
+            color: { value: primaryColor },
             shape: { type: "circle" },
             opacity: { value: 0.5, random: true },
             size: { value: 3, random: true },
-            line_linked: { enable: true, distance: 150, color: "#61892F", opacity: 0.4, width: 1 },
+            line_linked: { enable: true, distance: 150, color: primaryColor, opacity: 0.4, width: 1 },
             move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
         },
         interactivity: {
