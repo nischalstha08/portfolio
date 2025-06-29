@@ -46,7 +46,7 @@ function createMatrixEffect() {
     function draw() {
         ctx.fillStyle = 'rgba(255, 255, 255, 0.05)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = '#1e90ff';
+        ctx.fillStyle = '#86C232';
         ctx.font = fontSize + 'px monospace';
 
         for (let i = 0; i < drops.length; i++) {
@@ -284,11 +284,11 @@ window.onload = function() {
   particlesJS('particles-js', {
     particles: {
       number: { value: 80, density: { enable: true, value_area: 800 } },
-      color: { value: "#1e90ff" },
+      color: { value: "#86C232" },
       shape: { type: "circle" },
       opacity: { value: 0.5, random: false },
       size: { value: 3, random: true },
-      line_linked: { enable: true, distance: 150, color: "#1e90ff", opacity: 0.4, width: 1 },
+      line_linked: { enable: true, distance: 150, color: "#86C232", opacity: 0.4, width: 1 },
       move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
     },
     interactivity: {
@@ -359,11 +359,11 @@ document.addEventListener('DOMContentLoaded', function() {
     particlesJS('home-particles', {
         particles: {
             number: { value: 80, density: { enable: true, value_area: 800 } },
-            color: { value: "#3498db" },
+            color: { value: "#61892F" },
             shape: { type: "circle" },
             opacity: { value: 0.5, random: true },
             size: { value: 3, random: true },
-            line_linked: { enable: true, distance: 150, color: "#3498db", opacity: 0.4, width: 1 },
+            line_linked: { enable: true, distance: 150, color: "#61892F", opacity: 0.4, width: 1 },
             move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
         },
         interactivity: {
