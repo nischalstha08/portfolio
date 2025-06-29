@@ -20,6 +20,7 @@
 
     /* default text color for light sections */
     --text-color:      #474B4F;
+
 }
 
 body {
@@ -1896,4 +1897,4 @@ h1, h2, h3 {
   .cert-card p {
     color: #444;
   }
-  
+
